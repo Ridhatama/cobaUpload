@@ -1,0 +1,315 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" >
+      <div class="container">
+        <a class="navbar-brand mb-0 h1" href="#">All About Metaverse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ID/EN </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Support </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#staff">Tim Kami</a></li>
+                <li><a class="dropdown-item" href="#kontak">Kontak Kami</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="popup">
+                <button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#loginModal">
+                  Login
+                </button>
+                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-title text-center">
+                          <h4>Login</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                          <form>
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="email1"placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="password1" placeholder="Password">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                          </form>
+                          
+                          <div class="text-center text-muted delimiter">or use a social network</div>
+                          <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                              <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                              <i class="fab fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                              <i class="fab fa-linkedin"></i>
+                            </button>
+                          </di>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="modal-footer d-flex justify-content-center">
+                        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir Navbar-->
+    <!-- banner -->
+    <div class="container-fluid banner">
+      <div class="container text-center">
+        <h4 class="display-6">Selamat Datang</h4>
+        <h3 class="display-1">Tekan "Mulai" untuk pengalaman lebih lanjut</h3>
+          <a href="https://aframe.io/a-saturday-night/" class="btn btn-danger btn-round active" role="button" aria-pressed="true">Mulai</a>
+      </div>
+    </div>
+
+    <!-- sejarah -->
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <h2 class="display-3 text-center" id="sejarah">Sejarah Metaverse</h2>
+        <div class="clearfix pt-5">
+          <img src="https://cdn.discordapp.com/attachments/948192192462200873/978512776790159360/fut_tech2.jpg" class="col-md-6 float-md-end mb-7 crop-img" width="200" height="350" style="margin-left: 30px;" />
+          <p class="txtkonten">
+            Metaverse tentu kata yang sudah tidak asing lagi kita dengar di era modern ini. 
+            Metaverse terdiri dari dua suku kata yaitu Metayang artinya melampaui dan Verse berarti alam semesta. 
+            Metaverse diperkirakan akan menjadi wajah baru di masa depan, namun apakah kalian tahu bahwa istilah metaverse sudah ada sejak tahun 1992. 
+            Istilah metaverse pertama kali digunakan dalam sebuah novel berjudul Snow Crash karya Neal Stephenson,
+            novel ini menceritakan tentang manusia yang digambarkan sebagai avatar yang mampu berinteraksi dengan avatar lain dalam sebuah ruang virtual 3 Dimensi yang bersifat nyata. 
+            Kemudian dilanjutkan dengan rilisnya Second Life yang dirancang oleh Philip Rosedale dan tim nya pada tahun 2003.
+            Kemudian di tahun 2006 perusahaan Roblox Corporation merilis game Roblox yang mana dalam game ini para pemain dapat menciptakan sekaligus membagikan dunia buatan mereka
+            sendiri dengan pemain lain.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- tentang -->
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <h2 class="display-3 text-center" id="sejarah">Perkembangan Metaverse</h2>
+        <div class="clearfix pt-5">
+          <img src="https://cdn.discordapp.com/attachments/948192192462200873/978512795014402150/readyp1.jpg" class="col-md-6 float-md-start mb-7 crop-img" width="350" height="350" style="margin-right: 30px;" />
+          <p class="txtkonten">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Perferendis, asperiores ipsa quaerat officiis ex doloremque, pariatur autem quis distinctio atque ducimus, itaque culpa modi praesentium eaque cum odio consequatur. 
+            Illum asperiores culpa in nisi? Nostrum, quisquam asperiores excepturi exercitationem dicta minima necessitatibus maiores ipsa odit, corrupti, fugiat error officiis. 
+            Praesentium quis incidunt accusantium iste consectetur maxime quas sed quae corrupti blanditiis voluptates tempore corporis minus 
+            fuga necessitatibus perferendis fugiat non temporibus ut beatae in, similique eius earum odit. 
+            Eaque, soluta officiis voluptate eum velit dignissimos mollitia aliquam quae in!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- portofolio -->
+    <div class="container-fluid pt-5 pb-5 bg-light">
+      <div class="container text-center">
+        <h2 class="display-3" id="Berita">Berita</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, dolorum quasi? Neque consectetur odio placeat inventore perferendis quibusdam omnis deleniti.</p>
+        <div class="row pt-4 gx-4 gy-4">
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <iframe  src="https://www.youtube.com/embed/Uvufun6xer8" width="348" height="200">
+              </iframe>
+              <div class="card-body">
+                <h5 class="card-title">Meta</h5>
+                <p class="card-text">This year at Connect, Meta sharing their vision for the metaverse..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <iframe src="https://www.youtube.com/embed/V6VsxcVpBVY" width="348" height="200"></iframe>
+              <div class="card-body">
+                <h5 class="card-title">What is the metaverse? - BBC News</h5>
+                <p class="card-text">From virtual versions of ourselves to augmented reality, big brands like Meta (formerly Facebook) and Microsoft are creating technology to develop the metaverse. But what actually is it?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="https://www.elsevier.com/__data/assets/image/0004/823261/information-system-supporting-science.jpg" class="card-img-top" width="200" height="200" />
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum.</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odit atque nam animi dolores itaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="https://trinetprimasolusi.net/wp-content/uploads/2019/11/Management-Information-System.jpg" class="card-img-top" width="200" height="200" />
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum.</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odit atque nam animi dolores itaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="https://accounting.binus.ac.id/files/2019/07/KSInformationSystem-1515206840.jpg" class="card-img-top" width="200" height="200" />
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum.</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odit atque nam animi dolores itaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card crop-img">
+              <img src="https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/04/45a18-template-image-blog-white-4.png?resize=800%2C533" class="card-img-top" width="200" height="200" />
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum.</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis odit atque nam animi dolores itaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tentang -->
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <h2 class="display-3 text-center" id="tentang">Tentang</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ex!
+        </p>
+        <div class="clearfix pt-5">
+          <img
+            src="https://img.freepik.com/free-vector/about-us-website-banner-concept-with-thin-line-flat-design_56103-96.jpg?size=626&ext=jpg"
+            class="col-md-6 float-md-end mb-3 crop-img"
+            width="300"
+            height="300"
+          />
+          <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas veritatis corporis eveniet, ad porro perferendis eaque a sapiente inventore molestiae esse deleniti numquam hic nobis sit nostrum neque itaque maxime error, enim impedit. Dolorum pariatur quae, rem, quasi, inventore harum atque minus eaque nemo laudantium nisi natus aut illo! Vel, voluptatum porro, sunt eos, ipsum at nihil voluptatem quo blanditiis modi voluptates delectus doloremque. Amet consequuntur officiis corporis. Tempora, porro, nemo facere eaque similique distinctio laudantium atque cupiditate minus placeat non itaque ex dolore voluptate molestias repellat? Corporis ab quos veritatis nam doloribus quibusdam sunt labore minus provident consectetur, in magni commodi, architecto ipsa velit est enim quod. Recusandae, accusantium obcaecati neque, saepe laborum eveniet, repudiandae reprehenderit dolorum provident cupiditate voluptate. Minus laboriosam fuga mollitia cumque eius dolore voluptatum rerum hic enim temporibus nemo accusantium a deleniti odit, voluptas, illo quia eligendi amet, odio velit magnam? Dolores, illum esse facilis sunt necessitatibus fugiat error, explicabo accusantium itaque earum harum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- tim -->
+    <div class="container-fluid pt-5 pb-5 bg-light">
+      <div class="container text-center">
+        <h2 class="display-3" id="staff">Tim Kami</h2>
+        <p>Mahasiswa UPN Veteran Jakarta - Jurusan S-1 Informatika 2020</p>
+        <div class="row pt-4 gx-4 gy-4">
+          <div class="col-md-3 text-center tim">
+            <img src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" class="rounded-circle mb-3" />
+            <h4>Abednego C.R.</h4>
+            <p><b>NIM</b></p>
+            <p>2010511042</p>
+            <p><b>Email</b></p>
+            <p>2010511042@mahasiswa.upnvj.ac.id</p>
+            <p><b>No. Telepon</b></p>
+            <p>087820770002</p>
+          </div>
+          <div class="col-md-3 text-center tim">
+            <img src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" class="rounded-circle mb-3" />
+            <h4>Rivardi</h4>
+            <p><b>NIM</b></p>
+            <p>2010511014</p>
+            <p><b>Email</b></p>
+            <p>2010511014@mahasiswa.upnvj.ac.id</p>
+            <p><b>No. Telepon</b></p>
+            <p>085162742208</p>
+          </div>
+          <div class="col-md-3 text-center tim">
+            <img src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" class="rounded-circle mb-3" />
+            <h4>Alvin Putra</h4>
+            <p><b>NIM</b></p>
+            <p>2010511011</p>
+            <p><b>Email</b></p>
+            <p>2010511011@mahasiswa.upnvj.ac.id</p>
+            <p><b>No. Telepon</b></p>
+            <p>081806005851</p>
+          </div>
+          <div class="col-md-3 text-center tim">
+            <img src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" class="rounded-circle mb-3" />
+            <h4>Djoko Anung</h4>
+            <p><b>NIM</b></p>
+            <p>2010511034</p>
+            <p><b>Email</b></p>
+            <p>2010511034@mahasiswa.upnvj.ac.id</p>
+            <p><b>No. Telepon</b></p>
+            <p>082234589762</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- kontak -->
+    <div class="container-fluid pt-5 pb-5 kontak">
+      <div class="container">
+        <h2 class="display-3 text-center" id="kontak">Kontak Kami</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, porro.</p>
+        <div class="row pb-3">
+          <div class="col-md-6">
+            <input class="form-control form-control-lg mb-3" type="text" placeholder="Nama" />
+            <input class="form-control form-control-lg mb-3" type="text" placeholder="Email" />
+            <input class="form-control form-control-lg" type="text" placeholder="No. Phone" />
+          </div>
+          <div class="col-md-6">
+            <textarea class="form-control form-control-lg" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="col-md-3 mx-auto text-center">
+          <button type="button" class="btn btn-danger btn-lg">Kirim Pesan</button>
+        </div>
+      </div>
+    </div>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+  </body>
+</html>

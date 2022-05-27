@@ -1,0 +1,111 @@
+body{
+  font-family: 'Exo 2', sans-serif;
+}
+.banner {
+  background: url("https://cdn.discordapp.com/attachments/948192192462200873/978512776790159360/fut_tech2.jpg")
+  no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: white;
+}
+nav{
+  font-family: "Baumans", cursive;
+  font-size: 24px;
+  background-color: rgb(35, 131, 130)
+}
+
+a.navbar-brand {
+  font-size: 32px;
+
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 25px;
+}
+
+a.dropdown-item{
+  color: white  ;
+}
+
+.dropdown-menu {
+  font-size: 20px;
+  background-color: rgb(35, 131, 130);
+  margin-top: 50px;
+}
+
+.popup{
+  margin-left: -5px;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+p[class="txtkonten"]{
+  text-align: justify;
+}
+
+section {
+  margin-bottom: 0px;
+  display: flex;
+}
+
+section img {
+  width: 450px;
+  height: 350px;
+  margin: 50px 20px 0px 0px;
+}
+
+.kolom {
+  margin-top: 10px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+.display-6{
+  font-weight: 600;
+}
+
+.display-1{
+  font-weight: 600;
+}
+
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.lingkaran i {
+  position: relative;
+  top: 30px;
+}
+
+.crop-img {
+  object-fit: cover;
+}
+
+.tim img {
+  width: 250px;
+  border: 10px solid #cccccc;
+}
+
+.kontak {
+  /* background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat
+    center center;
+  background-size: cover; */
+  background-color: black;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  color: #fff;
+}
